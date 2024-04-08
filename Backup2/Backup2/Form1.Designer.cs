@@ -75,6 +75,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -89,7 +90,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(556, 57);
+            pictureBox3.Location = new Point(555, 57);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(189, 189);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -109,7 +110,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(1052, 57);
+            pictureBox5.Location = new Point(1051, 57);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(189, 189);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -119,7 +120,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(305, 446);
+            pictureBox6.Location = new Point(305, 445);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(189, 189);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -129,7 +130,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(556, 446);
+            pictureBox7.Location = new Point(555, 445);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(189, 189);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -139,7 +140,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(805, 446);
+            pictureBox8.Location = new Point(805, 445);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(189, 189);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -149,7 +150,7 @@
             // pictureBox9
             // 
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(1052, 446);
+            pictureBox9.Location = new Point(1051, 445);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(189, 189);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -161,7 +162,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.System;
-            label1.Location = new Point(324, 270);
+            label1.Location = new Point(325, 269);
             label1.Name = "label1";
             label1.Size = new Size(146, 40);
             label1.TabIndex = 9;
@@ -172,7 +173,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.FlatStyle = FlatStyle.System;
-            label2.Location = new Point(568, 270);
+            label2.Location = new Point(568, 269);
             label2.Name = "label2";
             label2.Size = new Size(177, 40);
             label2.TabIndex = 10;
@@ -183,7 +184,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.FlatStyle = FlatStyle.System;
-            label3.Location = new Point(805, 270);
+            label3.Location = new Point(805, 269);
             label3.Name = "label3";
             label3.Size = new Size(194, 40);
             label3.TabIndex = 11;
@@ -194,7 +195,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.FlatStyle = FlatStyle.System;
-            label4.Location = new Point(1064, 270);
+            label4.Location = new Point(1064, 269);
             label4.Name = "label4";
             label4.Size = new Size(177, 40);
             label4.TabIndex = 12;
@@ -238,7 +239,7 @@
             label8.AutoSize = true;
             label8.BackColor = Color.Transparent;
             label8.FlatStyle = FlatStyle.System;
-            label8.Location = new Point(1076, 661);
+            label8.Location = new Point(1077, 661);
             label8.Name = "label8";
             label8.Size = new Size(146, 40);
             label8.TabIndex = 16;
@@ -267,6 +268,7 @@
             button2.TabIndex = 18;
             button2.Text = "COMPRAR";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -278,6 +280,7 @@
             button3.TabIndex = 19;
             button3.Text = "COMPRAR";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -289,6 +292,7 @@
             button4.TabIndex = 20;
             button4.Text = "COMPRAR";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -300,6 +304,7 @@
             button5.TabIndex = 21;
             button5.Text = "COMPRAR";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -311,6 +316,7 @@
             button6.TabIndex = 22;
             button6.Text = "COMPRAR";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -322,6 +328,7 @@
             button7.TabIndex = 23;
             button7.Text = "COMPRAR";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -333,6 +340,7 @@
             button8.TabIndex = 24;
             button8.Text = "COMPRAR";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // Form1
             // 

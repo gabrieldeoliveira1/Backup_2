@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Csharp_and_Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace Backup2
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(Image image)
         {
             InitializeComponent();
+            pictureBox1.Image = image;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -25,6 +27,17 @@ namespace Backup2
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }
