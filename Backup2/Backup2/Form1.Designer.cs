@@ -167,6 +167,7 @@
             label1.Size = new Size(146, 40);
             label1.TabIndex = 9;
             label1.Text = "Servidor HP Proliant \r\n             DL360 ";
+            label1.Click += label1_Click;
             // 
             // label2
             // 

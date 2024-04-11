@@ -32,6 +32,8 @@
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             comboBox1 = new ComboBox();
+            label123 = new Label();
+            textBox1 = new TextBox();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -64,15 +66,32 @@
             comboBox1.Size = new Size(272, 28);
             comboBox1.TabIndex = 2;
             // 
+            // label123
+            // 
+            label123.AutoSize = true;
+            label123.Location = new Point(1098, 381);
+            label123.Name = "label123";
+            label123.Size = new Size(66, 20);
+            label123.TabIndex = 3;
+            label123.Text = "label123";
+            label123.Click += label1_Click_1;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(1059, 413);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(117, 27);
+            textBox1.TabIndex = 4;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(1099, 413);
+            label1.Location = new Point(514, 51);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 3;
-            label1.Text = "label1";
-            label1.Click += label1_Click_1;
+            label1.Size = new Size(194, 20);
+            label1.TabIndex = 5;
+            label1.Text = "deveria ser o nome do prod";
             // 
             // Form2
             // 
@@ -81,6 +100,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1282, 828);
             Controls.Add(label1);
+            Controls.Add(textBox1);
+            Controls.Add(label123);
             Controls.Add(comboBox1);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
@@ -97,6 +118,8 @@
         private Panel panel1;
         private PictureBox pictureBox1;
         private ComboBox comboBox1;
+        private Label label123;
+        private TextBox textBox1;
         private Label label1;
     }
 }

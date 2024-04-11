@@ -13,11 +13,25 @@ namespace Backup2
 {
     public partial class Form2 : Form
     {
+       
+
         public Form2(Image image)
         {
             InitializeComponent();
             pictureBox1.Image = image;
+            
         }
+
+        public Form2(Form1 Form1)
+        {
+            InitializeComponent();
+            Form1 = Form1;
+
+            // Define o texto da label de destino com base na propriedade do formulário original
+            label1.Text = Form1.Original;
+        }
+
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -34,7 +48,15 @@ namespace Backup2
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        public void label1_Click_1(object sender, EventArgs e)
+        {
+            //Connection cn = new Connection();
+            //string preco = cn.obterdados("Select produto.preco_prod from produto where Cod_prod = 1").ToString();
+            //label123.Text = preco;
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
             

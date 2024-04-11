@@ -6,10 +6,20 @@ namespace Backup2
     {
 
         Image produto;
+        
+        
+
         public Form1()
         {
             InitializeComponent();
         }
+
+        public string Original
+        {
+             get { return label1.Text; }
+
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -18,6 +28,10 @@ namespace Backup2
             Form2 form2 = new Form2(produto);
             form2.ShowDialog();
             label1.Text = cn.obterdados("Select produto.preco_prod from produto where Cod_prod = 1").ToString();
+
+            //Connection cn = new Connection();
+            //string preco = cn.obterdados("Select produto.preco_prod from produto where Cod_prod = 1").ToString();
+            //label123.Text = preco;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -72,6 +86,16 @@ namespace Backup2
             produto = pictureBox9.Image;
             Form2 form2 = new Form2(produto);
             form2.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+
+            // prod = label1.Text;
+            //Form2 form2 = new Form2(prod);
+            //form2.ShowDialog();
+
         }
     }
 }
