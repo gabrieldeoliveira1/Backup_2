@@ -14,7 +14,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace Backup2
 {
     public partial class Form2 : Form
-    {Classe_produto pct = new Classe_produto();
+    {
+        Classe_produto pct = new Classe_produto();
 
         Classe_produto CP = new Classe_produto();
         Connection cn = new Connection();
@@ -92,23 +93,35 @@ namespace Backup2
 
             if (comboBox1.SelectedIndex == 0)
             {
-                
+
                 preco3 = CP.preco;
                 desconto = preco3 - preco3 * 0.05;
 
                 MessageBox.Show("Detalhes do pedido: " + CP.nome);
-                MessageBox.Show("Valor total com desconto: " +  desconto);
+                MessageBox.Show("Valor total com desconto: R$" + desconto);
             }
             else
             {
                 desconto = preco3;
                 MessageBox.Show("Detalhes do pedido: " + CP.nome);
-                MessageBox.Show("Valor total sem desconto: " + CP.preco);
+                MessageBox.Show("Valor total sem desconto: R$" + CP.preco);
             }
 
             Form3 form3 = new Form3(pct);
             form3.ShowDialog();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
         }
     }
 }

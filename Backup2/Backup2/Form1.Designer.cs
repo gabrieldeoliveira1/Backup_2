@@ -67,6 +67,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.FromArgb(182, 205, 209);
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(-2, -1);

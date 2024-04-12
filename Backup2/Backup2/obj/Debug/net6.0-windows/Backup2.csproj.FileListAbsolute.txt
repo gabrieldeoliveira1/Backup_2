@@ -75,3 +75,4 @@ C:\Users\gabri\OneDrive\Documentos\GitHub\Backup_2\Backup2\Backup2\obj\Debug\net
 C:\Users\gabri\OneDrive\Documentos\GitHub\Backup_2\Backup2\Backup2\obj\Debug\net6.0-windows\Backup2.genruntimeconfig.cache
 C:\Users\gabri\OneDrive\Documentos\GitHub\Backup_2\Backup2\Backup2\obj\Debug\net6.0-windows\ref\Backup2.dll
 C:\Users\Aluno\Documents\GitHub\Backup_2\Backup2\Backup2\obj\Debug\net6.0-windows\Backup2.Form3.resources
+C:\Users\Aluno\Documents\GitHub\Backup_2\Backup2\Backup2\obj\Debug\net6.0-windows\Backup2.Form4.resources

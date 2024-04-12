@@ -36,6 +36,8 @@
             preco = new Label();
             button1 = new Button();
             panel2 = new Panel();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -119,12 +121,40 @@
             panel2.TabIndex = 7;
             panel2.Paint += panel2_Paint;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(182, 205, 209);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Location = new Point(1076, 36);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 72);
+            button2.TabIndex = 8;
+            button2.Text = "Adicionar ao Carrinho";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(182, 205, 209);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Location = new Point(1176, 36);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 72);
+            button3.TabIndex = 9;
+            button3.Text = "Desfazer carrinho";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1282, 828);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(panel2);
             Controls.Add(preco);
             Controls.Add(label123);
@@ -150,5 +180,7 @@
         private Label preco;
         private Button button1;
         private Panel panel2;
+        private Button button2;
+        private Button button3;
     }
 }
