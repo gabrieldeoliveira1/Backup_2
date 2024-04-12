@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Backup2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6d2ef75c3a46c097ba537115cef40091a0c3da4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e6bc5f823bfdf9e3dac60557a42d6522c12ada4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Backup2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Backup2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

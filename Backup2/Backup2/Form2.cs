@@ -13,22 +13,15 @@ namespace Backup2
 {
     public partial class Form2 : Form
     {
-       
 
-        public Form2(Image image)
+
+        public Form2(Classe_produto Produto, float tam)
         {
             InitializeComponent();
-            pictureBox1.Image = image;
-            
-        }
-
-        public Form2(Form1 Form1)
-        {
-            InitializeComponent();
-            Form1 = Form1;
-
-            // Define o texto da label de destino com base na propriedade do formulário original
-            label1.Text = Form1.Original;
+            pictureBox1.Image = Produto.imagem;
+            label123.Text = Produto.nome;
+            label123.Font = new Font(label123.Font.FontFamily, tam);
+            preco.Text = Produto.preco.ToString();
         }
 
 
@@ -58,7 +51,12 @@ namespace Backup2
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
             
         }
     }

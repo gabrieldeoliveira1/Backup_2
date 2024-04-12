@@ -33,8 +33,7 @@
             pictureBox1 = new PictureBox();
             comboBox1 = new ComboBox();
             label123 = new Label();
-            textBox1 = new TextBox();
-            label1 = new Label();
+            preco = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -69,29 +68,28 @@
             // label123
             // 
             label123.AutoSize = true;
-            label123.Location = new Point(1098, 381);
+            label123.BackColor = Color.Transparent;
+            label123.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label123.Location = new Point(937, 183);
             label123.Name = "label123";
-            label123.Size = new Size(66, 20);
+            label123.Size = new Size(121, 38);
             label123.TabIndex = 3;
             label123.Text = "label123";
             label123.Click += label1_Click_1;
             // 
-            // textBox1
+            // preco
             // 
-            textBox1.Location = new Point(1059, 413);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(117, 27);
-            textBox1.TabIndex = 4;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(514, 51);
-            label1.Name = "label1";
-            label1.Size = new Size(194, 20);
-            label1.TabIndex = 5;
-            label1.Text = "deveria ser o nome do prod";
+            preco.AutoSize = true;
+            preco.BackColor = Color.Transparent;
+            preco.FlatStyle = FlatStyle.Flat;
+            preco.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            preco.ForeColor = Color.White;
+            preco.Location = new Point(1035, 373);
+            preco.Name = "preco";
+            preco.Size = new Size(185, 81);
+            preco.TabIndex = 5;
+            preco.Text = "preço";
+            preco.Click += label1_Click_2;
             // 
             // Form2
             // 
@@ -99,8 +97,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1282, 828);
-            Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(preco);
             Controls.Add(label123);
             Controls.Add(comboBox1);
             Controls.Add(panel1);
@@ -119,7 +116,6 @@
         private PictureBox pictureBox1;
         private ComboBox comboBox1;
         private Label label123;
-        private TextBox textBox1;
-        private Label label1;
+        private Label preco;
     }
 }
