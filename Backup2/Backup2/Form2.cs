@@ -1,4 +1,5 @@
 ﻿using Csharp_and_Database;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,14 +9,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Backup2
 {
     public partial class Form2 : Form
-    {
+    {Classe_produto pct = new Classe_produto();
 
+        Classe_produto CP = new Classe_produto();
+        Connection cn = new Connection();
 
-        public Form2(Classe_produto Produto, float tam)
+        double preco3;
+        double desconto;
+        public Form2(Classe_produto Produto, float tam, int cod)
         {
             InitializeComponent();
             pictureBox1.Image = Produto.imagem;
@@ -29,6 +35,10 @@ namespace Backup2
             {
                 comboBox1.Items.Add(itens[i]);
             }
+            DataTable dados;
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + cod);
+            CP.nome = dados.Rows[0][1].ToString();
+            CP.preco = float.Parse(dados.Rows[0][2].ToString());
         }
 
 
@@ -69,7 +79,36 @@ namespace Backup2
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (comboBox1.SelectedIndex == 0)
+            {
+                
+                preco3 = CP.preco;
+                desconto = preco3 - preco3 * 0.05;
+
+                MessageBox.Show("Detalhes do pedido: " + CP.nome);
+                MessageBox.Show("Valor total com desconto: " +  desconto);
+            }
+            else
+            {
+                desconto = preco3;
+                MessageBox.Show("Detalhes do pedido: " + CP.nome);
+                MessageBox.Show("Valor total sem desconto: " + CP.preco);
+            }
+
+            Form3 form3 = new Form3(pct);
+            form3.ShowDialog();
+
         }
     }
 }

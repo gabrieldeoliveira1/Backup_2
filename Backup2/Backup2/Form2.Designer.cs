@@ -34,7 +34,10 @@
             comboBox1 = new ComboBox();
             label123 = new Label();
             preco = new Label();
+            button1 = new Button();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -86,12 +89,35 @@
             preco.FlatStyle = FlatStyle.Flat;
             preco.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
             preco.ForeColor = Color.White;
-            preco.Location = new Point(1035, 373);
+            preco.Location = new Point(1035, 368);
             preco.Name = "preco";
             preco.Size = new Size(185, 81);
             preco.TabIndex = 5;
             preco.Text = "preço";
             preco.Click += label1_Click_2;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(-17, -12);
+            button1.Name = "button1";
+            button1.Size = new Size(311, 152);
+            button1.TabIndex = 6;
+            button1.Text = "COMPRAR";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.Control;
+            panel2.Controls.Add(button1);
+            panel2.Location = new Point(948, 608);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(272, 125);
+            panel2.TabIndex = 7;
+            panel2.Paint += panel2_Paint;
             // 
             // Form2
             // 
@@ -99,15 +125,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1282, 828);
+            Controls.Add(panel2);
             Controls.Add(preco);
             Controls.Add(label123);
             Controls.Add(comboBox1);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,5 +148,7 @@
         private ComboBox comboBox1;
         private Label label123;
         private Label preco;
+        private Button button1;
+        private Panel panel2;
     }
 }

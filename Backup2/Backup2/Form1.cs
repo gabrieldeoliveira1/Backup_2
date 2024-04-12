@@ -30,7 +30,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 1);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 1);
             form2.ShowDialog();
 
         }
@@ -54,7 +54,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 2);
             cp.preco = float.Parse(dados.Rows[0] [2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 2);
             form2.ShowDialog();
 
         }
@@ -73,7 +73,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 3);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 3);
             form2.ShowDialog();
         }
 
@@ -89,7 +89,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 4);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 4);
             form2.ShowDialog();
         }
 
@@ -105,7 +105,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 5);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 5);
             form2.ShowDialog();
         }
 
@@ -121,7 +121,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 6);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 6);
             form2.ShowDialog();
         }
 
@@ -138,7 +138,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 7);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 7);
             form2.ShowDialog();
         }
 
@@ -154,7 +154,7 @@ namespace Backup2
             dados = cn.obterdados("Select * from produto where Cod_prod = " + 8);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
-            Form2 form2 = new Form2(cp, tam);
+            Form2 form2 = new Form2(cp, tam, 8);
             form2.ShowDialog();
         }
 
