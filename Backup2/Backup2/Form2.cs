@@ -22,6 +22,13 @@ namespace Backup2
             label123.Text = Produto.nome;
             label123.Font = new Font(label123.Font.FontFamily, tam);
             preco.Text = Produto.preco.ToString();
+
+            String[] itens = { "Pix", "Crédito", "Débito" };
+
+            for (int i = 0; i < itens.Length; i++)
+            {
+                comboBox1.Items.Add(itens[i]);
+            }
         }
 
 
@@ -56,6 +63,11 @@ namespace Backup2
         }
 
         private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
         }

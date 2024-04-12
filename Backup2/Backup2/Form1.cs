@@ -51,8 +51,8 @@ namespace Backup2
             cp.imagem = pictureBox3.Image;
 
             Connection cn = new Connection();
-            dados = cn.obterdados("Select * from produto where Cod_prod = " + 1);
-            cp.preco = float.Parse(dados.Rows[1] [2].ToString());
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + 2);
+            cp.preco = float.Parse(dados.Rows[0] [2].ToString());
 
             Form2 form2 = new Form2(cp, tam);
             form2.ShowDialog();
@@ -70,7 +70,7 @@ namespace Backup2
             
 
             Connection cn = new Connection();
-            dados = cn.obterdados("Select * from produto where Cod_prod = " + 1);
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + 3);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
             Form2 form2 = new Form2(cp, tam);
@@ -86,7 +86,7 @@ namespace Backup2
             cp.nome = label4.Text;
             cp.imagem = pictureBox5.Image;
             Connection cn = new Connection();
-            dados = cn.obterdados("Select * from produto where Cod_prod = " + 1);
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + 4);
             cp.preco = float.Parse(dados.Rows[0][2].ToString());
 
             Form2 form2 = new Form2(cp, tam);
@@ -95,44 +95,65 @@ namespace Backup2
 
         private void button5_Click(object sender, EventArgs e)
         {
+            DataTable dados;
             float tam = 17;
             produto = pictureBox6.Image;
             Classe_produto cp = new Classe_produto();
             cp.nome = label5.Text;
             cp.imagem = pictureBox6.Image;
-            Form2 form2 = new Form2(cp,tam);
+            Connection cn = new Connection();
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + 5);
+            cp.preco = float.Parse(dados.Rows[0][2].ToString());
+
+            Form2 form2 = new Form2(cp, tam);
             form2.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            DataTable dados; 
             float tam = 15;
             produto = pictureBox7.Image;
             Classe_produto cp = new Classe_produto();
             cp.nome = label6.Text;
             cp.imagem = pictureBox7.Image;
+            Connection cn = new Connection();
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + 6);
+            cp.preco = float.Parse(dados.Rows[0][2].ToString());
+
             Form2 form2 = new Form2(cp, tam);
             form2.ShowDialog();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            DataTable dados;
             float tam = 17;
             produto = pictureBox8.Image;
             Classe_produto cp = new Classe_produto();
             cp.nome = label7.Text;
             cp.imagem = pictureBox8.Image;
+            Connection cn = new Connection();
+
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + 7);
+            cp.preco = float.Parse(dados.Rows[0][2].ToString());
+
             Form2 form2 = new Form2(cp, tam);
             form2.ShowDialog();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            DataTable dados;
             float tam = 20;
             produto = pictureBox9.Image;
             Classe_produto cp = new Classe_produto();
             cp.nome = label8.Text;
             cp.imagem = pictureBox9.Image;
+            Connection cn = new Connection();
+            dados = cn.obterdados("Select * from produto where Cod_prod = " + 8);
+            cp.preco = float.Parse(dados.Rows[0][2].ToString());
+
             Form2 form2 = new Form2(cp, tam);
             form2.ShowDialog();
         }

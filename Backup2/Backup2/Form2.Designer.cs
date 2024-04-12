@@ -64,12 +64,14 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(272, 28);
             comboBox1.TabIndex = 2;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label123
             // 
             label123.AutoSize = true;
             label123.BackColor = Color.Transparent;
             label123.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label123.ForeColor = Color.White;
             label123.Location = new Point(937, 183);
             label123.Name = "label123";
             label123.Size = new Size(121, 38);
